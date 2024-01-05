@@ -14,8 +14,8 @@ ENV VIRTUALENV=$HOME/.venv
 ENV PATH="$VIRTUALENV/bin:$PATH"
 
 COPY --chown=daveisme pyproject.toml constraints.txt ./
-COPY --chown=daveisme src/ src/
-COPY --chown=daveisme test/ test/
+COPY --chown=daveisme src src/
+COPY --chown=daveisme test test/
 
 RUN python3 -m venv $VIRTUALENV && \
     python -m pip install --upgrade pip setuptools && \

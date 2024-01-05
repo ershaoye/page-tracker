@@ -3,6 +3,7 @@ Name: page-tracker
 Version: 1.0.0
 Requires-Dist: flask
 Requires-Dist: redis
+Requires-Dist: gunicorn
 Provides-Extra: dev
 Requires-Dist: bandit; extra == "dev"
 Requires-Dist: black; extra == "dev"
